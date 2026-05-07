@@ -144,12 +144,11 @@ export const TESTIMONIOS = [
 
 // ─── GALERÍA ──────────────────────────────────────────────────────────────────
 export const GALLERY_ITEMS = [
-  { label: 'Setup Completo',       src: 'public/galeria/img9.jpg', large: true,  color: 'from-brand-red/20'    },
-  { label: 'Luces', src: 'public/galeria/img12.jpg',          large: false, color: 'from-brand-blue/20'   },
-  { label: 'Sistema de Sonido',    src: 'public/equipo.jpg',          large: false, color: 'from-brand-purple/20' },
-  { label: 'Pantalla Proyección',  src: 'public/galeria/img3.jpg',          large: false, color: 'from-brand-red/15'    },
-  { label: 'Animación en Vivo',    src: 'public/galeria/img11.jpg',          large: false, color: 'from-brand-blue/15'   },
-  //{ label: 'Equipo Profesional',   src: 'public/galeria/img11.jpg',           large: false, color: 'from-brand-purple/15' },
+  { label: 'Setup Completo',      src: '/galeria/img9.jpg',  large: true,  color: 'from-brand-red/20'    },
+  { label: 'Luces',               src: '/galeria/img12.jpg', large: false, color: 'from-brand-blue/20'   },
+  { label: 'Sistema de Sonido',   src: '/equipo.jpg',        large: false, color: 'from-brand-purple/20' },
+  { label: 'Pantalla Proyección', src: '/galeria/img3.jpg',  large: false, color: 'from-brand-red/15'    },
+  { label: 'Animación en Vivo',   src: '/galeria/img11.jpg', large: false, color: 'from-brand-blue/15'   },
 ];
 
 // ─── NAV LINKS ────────────────────────────────────────────────────────────────
