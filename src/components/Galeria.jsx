@@ -5,41 +5,48 @@ import { GALLERY_ITEMS, WHATSAPP_URL } from '../constants';
 
 /**
  * Ítem individual de la galería.
+ * - Si src tiene valor  → muestra la imagen real
+ * - Si src es null      → muestra placeholder con color de fondo
  *
- * NOTA: Reemplaza el div placeholder por una imagen real:
- * <img src="/images/foto-evento.jpg" alt={label} className="w-full h-full object-cover" />
- *
- * @param {object}  props
- * @param {string}  props.label  - Etiqueta visible al hacer hover
- * @param {string}  props.color  - Clase Tailwind de color de fondo (from-...)
- * @param {boolean} props.large  - Si ocupa 2 filas (primer elemento)
+ * Para agregar fotos: editá GALLERY_ITEMS en constants/index.js
+ * y poné la ruta en src, ej: src: '/galeria/foto1.jpg'
  */
-function GalleryItem({ label, color, large }) {
+function GalleryItem({ label, src, color, large }) {
   return (
     <div
-      className={`group relative overflow-hidden bg-brand-dark-3 cursor-pointer
+      className={`group relative overflow-hidden bg-[#1e2a4a] cursor-pointer
                   ${large ? 'col-span-6 md:col-span-2 row-span-2' : 'col-span-3 md:col-span-2'}`}
     >
-      {/* ── Placeholder — reemplaza por <img> real ── */}
-      <div
-        className={`w-full h-full bg-gradient-to-br ${color} to-brand-dark-3
-                    flex items-center justify-center group-hover:scale-105 transition-transform duration-500`}
-      >
-        <div className="text-center opacity-30">
-          <Mic2
-            size={large ? 48 : 24}
-            className="mx-auto mb-2 text-white"
-            strokeWidth={1}
-          />
-          {large && (
-            <span className="font-rajdhani text-xs tracking-[2px] uppercase text-white">
-              Tu foto aquí
-            </span>
-          )}
+      {/* ── Imagen real o placeholder según src ── */}
+      {src ? (
+        <img
+          src={src}
+          alt={label}
+          className="w-full h-full object-cover
+                     group-hover:scale-105 transition-transform duration-500"
+        />
+      ) : (
+        <div
+          className={`w-full h-full bg-gradient-to-br ${color} to-[#1e2a4a]
+                      flex items-center justify-center
+                      group-hover:scale-105 transition-transform duration-500`}
+        >
+          <div className="text-center opacity-20">
+            <Mic2
+              size={large ? 48 : 24}
+              className="mx-auto mb-2 text-white"
+              strokeWidth={1}
+            />
+            {large && (
+              <span className="font-rajdhani text-xs tracking-[2px] uppercase text-white">
+                Tu foto aquí
+              </span>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* ── Overlay en hover ── */}
+      {/* ── Label visible al hacer hover ── */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300
                       flex items-end p-4">
@@ -58,10 +65,10 @@ export default function Galeria() {
   const [ref, inView] = useInView();
 
   return (
-    <section id="galeria" className="py-24 px-6 bg-brand-dark">
+    <section id="galeria" className="py-24 px-6 bg-[#1A1A2E]">
       <div className="max-w-7xl mx-auto">
 
-        {/* ── Header con botón "Ver más" ── */}
+        {/* ── Encabezado ── */}
         <div
           ref={ref}
           className={`flex justify-between items-end mb-10 flex-wrap gap-4
@@ -86,7 +93,7 @@ export default function Galeria() {
           </a>
         </div>
 
-        {/* ── Grid de imágenes ── */}
+        {/* ── Grid ── */}
         <div className="grid grid-cols-6 grid-rows-2 gap-1 h-[420px] md:h-[500px]">
           {GALLERY_ITEMS.map((item, i) => (
             <GalleryItem key={i} {...item} />

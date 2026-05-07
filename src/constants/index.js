@@ -94,20 +94,20 @@ export const SERVICIOS = [
   {
     iconName: 'Mic2',
     name:     'Karaoke Bailable',
-    desc:     'La combinación perfecta de música y diversión para bares y eventos privados. Pistas en español, inglés y otros idiomas para que nadie se quede sin cantar.',
+    desc:     'Para bares y eventos privados. Pistas en español, inglés y otros idiomas para que nadie se quede sin cantar.',
     tags:     ['Música Bailable', 'Bares & eventos privados', 'Micrófonos inalámbricos', 'Pantalla HD'],
   },
   {
     iconName: 'Volume2',
     name:     'Amplificación & Transmisión',
-    desc:     'Sonido para reuniones, celebraciones y transmisión de partidos en pantalla grande. El sonido y la imagen que tu evento necesita.',
+    desc:     'Sonido para reuniones, celebraciones y transmisión de partidos en pantalla grande.',
     tags:     ['Sonido Profesional', 'Transmisión de partidos', 'Exteriores e interiores', 'Pantalla grande'],
   },
   {
     iconName: 'Sparkles',
     name:     'Eventos Especiales',
-    desc:     'Producción completa para bodas, quinceañeras, graduaciones y más. DJ profesional, Iluminacion DMX, animación personalizada y pantalla de proyección para los momentos que no se repiten.',
-    tags:     ['Bodas & XV años', 'Graduaciones', 'DJ + Karaoke', 'Sistema de Iluminación DMX'],
+    desc:     'Bodas, quinceaños, graduaciones y más. Iluminacion DMX, animación personalizada y pantalla de proyección para los momentos que no se repiten.',
+    tags:     ['Celebraciones', 'Actividades', 'DJ + Karaoke', 'Luces'],
   },
 ];
 
@@ -144,12 +144,12 @@ export const TESTIMONIOS = [
 
 // ─── GALERÍA ──────────────────────────────────────────────────────────────────
 export const GALLERY_ITEMS = [
-  { label: 'Setup Completo',       src: '/equipo.jpg', large: true,  color: 'from-brand-red/20'    },
-  { label: 'Torre de Iluminación', src: null,          large: false, color: 'from-brand-blue/20'   },
-  { label: 'Sistema de Sonido',    src: null,          large: false, color: 'from-brand-purple/20' },
-  { label: 'Pantalla Proyección',  src: null,          large: false, color: 'from-brand-red/15'    },
-  { label: 'Animación en Vivo',    src: null,          large: false, color: 'from-brand-blue/15'   },
-  { label: 'Equipo Profesional',   src: null,          large: false, color: 'from-brand-purple/15' },
+  { label: 'Setup Completo',       src: 'public/galeria/img9.jpg', large: true,  color: 'from-brand-red/20'    },
+  { label: 'Luces', src: 'public/galeria/img12.jpg',          large: false, color: 'from-brand-blue/20'   },
+  { label: 'Sistema de Sonido',    src: 'public/equipo.jpg',          large: false, color: 'from-brand-purple/20' },
+  { label: 'Pantalla Proyección',  src: 'public/galeria/img3.jpg',          large: false, color: 'from-brand-red/15'    },
+  { label: 'Animación en Vivo',    src: 'public/galeria/img11.jpg',          large: false, color: 'from-brand-blue/15'   },
+  //{ label: 'Equipo Profesional',   src: 'public/galeria/img11.jpg',           large: false, color: 'from-brand-purple/15' },
 ];
 
 // ─── NAV LINKS ────────────────────────────────────────────────────────────────
@@ -158,15 +158,15 @@ export const NAV_LINKS = [
   { href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
-  { href: '#testimonios', label: 'Testimonios' },
+  // { href: '#testimonios', label: 'Testimonios' },
 ];
 
 // ─── CTA FEATURES ─────────────────────────────────────────────────────────────
 export const CTA_FEATURES = [
   { iconName: 'Zap',     text: 'Respuesta en 2h'     },
-  { iconName: 'Award',   text: 'Garantía de calidad' },
-  { iconName: 'Users',   text: 'Animación incluida'  },
-  { iconName: 'Volume2', text: 'Sonido Peavey Pro'   },
+  { iconName: 'Award',   text: 'Haz tu evento realidad'},
+  { iconName: 'Users',   text: 'Arma tu fiesta hoy'},
+  { iconName: 'Volume2', text: 'Contáctanos ya'   },
 ];
 
 // ─── FOOTER NAV ───────────────────────────────────────────────────────────────
@@ -175,5 +175,5 @@ export const FOOTER_NAV_LINKS = [
   { href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
-  { href: '#testimonios', label: 'Testimonios' },
+ // { href: '#testimonios', label: 'Testimonios' },
 ];

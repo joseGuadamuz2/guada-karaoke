@@ -79,8 +79,7 @@ export default function Servicios() {
             Nuestros <span className="text-brand-red">Servicios</span>
           </h2>
           <p className="font-inter text-gray-500 mt-3 text-sm leading-relaxed max-w-md">
-            Soluciones para cada tipo de celebración — desde reuniones íntimas
-            hasta eventos de gran escala en Guanacaste.
+            Soluciones para tu celebración o evento en Guanacaste.
           </p>
         </div>
 

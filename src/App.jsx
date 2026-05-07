@@ -32,7 +32,7 @@ export default function App() {
         <NeonDivider />
         <Cobertura />
         <NeonDivider />
-        <Testimonios />
+        {/* <Testimonios /> */}
         <NeonDivider />
         <CTAFinal />
         <Footer />
