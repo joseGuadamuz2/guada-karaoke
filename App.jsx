@@ -9,10 +9,13 @@ import Testimonios from './components/Testimonios';
 import CTAFinal    from './components/CTAFinal';
 import Footer      from './components/Footer';
 import NeonDivider from './components/ui/NeonDivider';
+import AnimatedBackground from './components/ui/AnimatedBackground';
 
 export default function App() {
   return (
+    
     <div className="min-h-screen bg-brand-dark text-white font-rajdhani">
+     <AnimatedBackground />
       <Navbar />
       <Hero />
       <StatsStrip />
