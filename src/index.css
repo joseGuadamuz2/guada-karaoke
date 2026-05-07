@@ -32,13 +32,95 @@
 
 /* ── Utilidades custom que Tailwind no genera ── */
 @layer utilities {
-  /* Borde interior semitransparente para las cards de servicios */
   .border-white\/8 {
     border-color: rgba(255, 255, 255, 0.08);
   }
 
-  /* Fondo muy sutil para pills */
   .bg-white\/3 {
     background-color: rgba(255, 255, 255, 0.03);
   }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TEXTURA ANIMADA DE FONDO — puntos de grilla + partículas CSS
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Capa 1: grilla de puntos sutiles (SVG inline como data URL) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.09) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+  animation: grid-breathe 8s ease-in-out infinite;
+}
+
+@keyframes grid-breathe {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1;   }
+}
+
+/* Capa 2: glows radiales de marca (rojo + púrpura) */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 55% 60% at 15% 50%,  rgba(192, 57, 43, 0.07)  0%, transparent 70%),
+    radial-gradient(ellipse 50% 55% at 85% 25%,  rgba(139, 92, 246, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 50% 90%,  rgba(59, 130, 246, 0.04) 0%, transparent 70%);
+  animation: glow-shift 12s ease-in-out infinite alternate;
+}
+
+@keyframes glow-shift {
+  0%   {
+    background:
+      radial-gradient(ellipse 55% 60% at 15% 50%,  rgba(192, 57, 43, 0.07)  0%, transparent 70%),
+      radial-gradient(ellipse 50% 55% at 85% 25%,  rgba(139, 92, 246, 0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 50% 90%,  rgba(59, 130, 246, 0.04) 0%, transparent 70%);
+  }
+  100% {
+    background:
+      radial-gradient(ellipse 60% 55% at 25% 35%,  rgba(192, 57, 43, 0.09)  0%, transparent 70%),
+      radial-gradient(ellipse 45% 50% at 75% 65%,  rgba(139, 92, 246, 0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 45% at 60% 10%,  rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+  }
+}
+
+/* Partículas CSS — 20 puntos animados con colores de marca */
+.bg-particles {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-particles span {
+  position: absolute;
+  border-radius: 50%;
+  animation: float-up linear infinite;
+  opacity: 0;
+}
+
+@keyframes float-up {
+  0%   { transform: translateY(0)   translateX(0);    opacity: 0;    }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(-105vh) translateX(var(--drift)); opacity: 0; }
+}
+
+/* ── El div raíz no debe tapar el fondo ── */
+#root > div {
+  position: relative;
+  z-index: 1;
+  background: transparent !important;
 }

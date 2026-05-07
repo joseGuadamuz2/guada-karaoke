@@ -9,26 +9,34 @@ import Testimonios from './components/Testimonios';
 import CTAFinal    from './components/CTAFinal';
 import Footer      from './components/Footer';
 import NeonDivider from './components/ui/NeonDivider';
+import BgParticles from './components/ui/BgParticles';
+
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-brand-dark text-white font-rajdhani">
-      <Navbar />
-      <Hero />
-      <StatsStrip />
-      <NeonDivider />
-      <Servicios />
-      <NeonDivider />
-      <Precios />
-      <NeonDivider />
-      <Galeria />
-      <NeonDivider />
-      <Cobertura />
-      <NeonDivider />
-      <Testimonios />
-      <NeonDivider />
-      <CTAFinal />
-      <Footer />
-    </div>
+    <>
+      {/* Partículas fuera del div principal para no ser tapadas */}
+      <BgParticles />
+
+      <div className="min-h-screen text-white font-rajdhani" style={{ background: 'transparent' }}>
+
+        <Navbar />
+        <Hero />
+        <StatsStrip />
+        <NeonDivider />
+        <Servicios />
+        <NeonDivider />
+        <Precios />
+        <NeonDivider />
+        <Galeria />
+        <NeonDivider />
+        <Cobertura />
+        <NeonDivider />
+        <Testimonios />
+        <NeonDivider />
+        <CTAFinal />
+        <Footer />
+      </div>
+    </>
   );
 }
