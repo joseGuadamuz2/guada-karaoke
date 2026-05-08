@@ -25,8 +25,8 @@ export default function App() {
         <StatsStrip />
         <NeonDivider />
         <Servicios />
-        <NeonDivider />
-        <Precios />
+       {/*<NeonDivider />
+        <Precios />*/} 
         <NeonDivider />
         <Galeria />
         <NeonDivider />

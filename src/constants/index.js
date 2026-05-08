@@ -25,10 +25,10 @@ export const COVERAGE_ZONES = [
     seoKeyword:  'karaoke Cañas Guanacaste',
   },
   {
-    city:        'Tilarán',
+    city:        'Santa Cruz',
     region:      'Guanacaste',
-    description: 'Zona del lago Arenal y la montaña. Bodas con vista al lago, quinceañeras y eventos especiales.',
-    seoKeyword:  'karaoke Tilarán Arenal',
+    description: 'Ciudad de la tradición guanacasteca. Fiestas patronales, eventos privados y celebraciones familiares.',
+    seoKeyword:  'karaoke Santa Cruz Guanacaste',
   },
   {
     city:        'Liberia',
@@ -41,32 +41,31 @@ export const COVERAGE_ZONES = [
 // ─── PAQUETES / PRECIOS ───────────────────────────────────────────────────────
 export const PAQUETES = [
   {
-    name:      'Paquete 3h Básico',
+    name:      'Paquete Básico',
     price:     '₡70,000 + IVA',
-    hours:     1,
+    hours:     3,
     highlight: false,
     tag:       null,
     includes: [
       'Sonido profesional',
       'Micrófonos inalámbricos',
       'Pantalla de proyección',
-      'Karaoke completo (8K+ canciones)',
-      'Torre de iluminación LED',
+      'Karaoke bailable',
+      'Luces y máquina de humo',
+      '3 horas de animación',
     ],
     cta: 'Cotizar paquete básico',
   },
   {
-    name:      'Paquete 5h',
+    name:      'Paquete Premium',
     price:     '₡85,000 + IVA',
     hours:     5,
     highlight: true,
     tag:       'Más solicitado',
     includes: [
-      'Todo lo del Básico',
-      'DJ profesional + Karaoke',
-      'Luces LED ambiente completo',
-      '2 horas adicionales cubiertas',
-      'Setup completo con truss',
+       'Todo lo del Básico',
+      '5 horas de animación',          
+      'Hora extra: ₡15,000 + IVA',
     ],
     cta: 'Cotizar paquete premium',
   },
@@ -77,10 +76,9 @@ export const PAQUETES = [
     highlight: false,
     tag:       'Bodas · Empresas · XV años',
     includes: [
-      'DJ profesional + Karaoke',
+      'DJ + Karaoke',
       'Animación personalizada',
       'Luces LED ambiente completo',
-      'Sonido de alta potencia',
       'Show adaptado a tu evento',
     ],
     cta: 'Solicitar cotización especial',
@@ -93,8 +91,8 @@ export const HORA_EXTRA = '₡15,000';
 export const SERVICIOS = [
   {
     iconName: 'Mic2',
-    name:     'Karaoke Bailable',
-    desc:     'Para bares y eventos privados. Pistas en español, inglés y otros idiomas para que nadie se quede sin cantar.',
+    name:     'Karaoke Bailable + DJ',
+    desc:     'Para bares y eventos privados.',
     tags:     ['Música Bailable', 'Bares & eventos privados', 'Micrófonos inalámbricos', 'Pantalla HD'],
   },
   {
@@ -107,7 +105,7 @@ export const SERVICIOS = [
     iconName: 'Sparkles',
     name:     'Eventos Especiales',
     desc:     'Bodas, quinceaños, graduaciones y más. Iluminacion DMX, animación personalizada y pantalla de proyección para los momentos que no se repiten.',
-    tags:     ['Celebraciones', 'Actividades', 'DJ + Karaoke', 'Luces'],
+    tags:     ['Celebraciones', 'Actividades', 'Sonido de calidad', 'Luces'],
   },
 ];
 
@@ -154,7 +152,7 @@ export const GALLERY_ITEMS = [
 // ─── NAV LINKS ────────────────────────────────────────────────────────────────
 export const NAV_LINKS = [
   { href: '#servicios',   label: 'Servicios'   },
-  { href: '#precios',     label: 'Precios'     },
+  //{ href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
   // { href: '#testimonios', label: 'Testimonios' },
@@ -171,7 +169,7 @@ export const CTA_FEATURES = [
 // ─── FOOTER NAV ───────────────────────────────────────────────────────────────
 export const FOOTER_NAV_LINKS = [
   { href: '#servicios',   label: 'Servicios'   },
-  { href: '#precios',     label: 'Precios'     },
+  //{ href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
  // { href: '#testimonios', label: 'Testimonios' },
