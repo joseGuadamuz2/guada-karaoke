@@ -19,14 +19,95 @@
     <meta property="og:description" content="Animación profesional y sonido Peavey de alta fidelidad para tus eventos en Guanacaste. Cañas · Tilarán · Liberia." />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_CR" />
-    <meta property="og:image" content="/logo-oficial.jpg" />
-    <!-- <meta property="og:url" content="https://tudominio.com" /> -->
+    <meta property="og:image" content="https://guada-karaoke.vercel.app/logo-oficial.jpg" />
+    <meta property="og:url" content="https://guada-karaoke.vercel.app" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Guada Karaoke · Guanacaste" />
     <meta name="twitter:description" content="Karaoke profesional en Cañas, Tilarán y Liberia." />
-    <meta name="twitter:image" content="/logo-oficial.jpg" />
+    <meta name="twitter:image" content="https://guada-karaoke.vercel.app/logo-oficial.jpg" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://guada-karaoke.vercel.app/" />
+
+    <!-- Schema JSON-LD: Negocio local + Servicios + Precios -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://guada-karaoke.vercel.app/#business",
+          "name": "Guada Karaoke",
+          "description": "Karaoke profesional, animación y sonido para eventos en Guanacaste, Costa Rica. Fiestas, bodas, quinceañeras y eventos corporativos en Cañas, Tilarán y Liberia.",
+          "url": "https://guada-karaoke.vercel.app",
+          "telephone": "+50683388115",
+          "email": "jocguada@gmail.com",
+          "image": "https://guada-karaoke.vercel.app/logo-oficial.jpg",
+          "priceRange": "₡₡",
+          "currenciesAccepted": "CRC",
+          "paymentAccepted": "Cash, SINPE Móvil",
+          "areaServed": [
+            { "@type": "City", "name": "Cañas", "containedInPlace": { "@type": "State", "name": "Guanacaste" } },
+            { "@type": "City", "name": "Tilarán", "containedInPlace": { "@type": "State", "name": "Guanacaste" } },
+            { "@type": "City", "name": "Liberia", "containedInPlace": { "@type": "State", "name": "Guanacaste" } }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cañas",
+            "addressRegion": "Guanacaste",
+            "addressCountry": "CR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 10.4273,
+            "longitude": -85.1100
+          },
+          "sameAs": [
+            "https://www.facebook.com/guadakaraoke1/",
+            "https://www.tiktok.com/@joseluisguadamu23",
+            "https://www.youtube.com/@joseguadamuz4904"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Paquetes de Karaoke",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Paquete Básico",
+                "description": "3 horas de animación. Sonido profesional, micrófonos inalámbricos, pantalla de proyección, karaoke con más de 8000 canciones, torre de iluminación LED.",
+                "price": "70000",
+                "priceCurrency": "CRC"
+              },
+              {
+                "@type": "Offer",
+                "name": "Paquete Premium",
+                "description": "5 horas de animación. Todo lo del básico más DJ profesional, luces LED ambiente completo y setup con truss.",
+                "price": "85000",
+                "priceCurrency": "CRC"
+              },
+              {
+                "@type": "Offer",
+                "name": "Eventos Especiales",
+                "description": "Para bodas, empresas y quinceañeras. DJ profesional, animación personalizada, sonido de alta potencia.",
+                "price": "120000",
+                "priceCurrency": "CRC"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://guada-karaoke.vercel.app/#website",
+          "url": "https://guada-karaoke.vercel.app",
+          "name": "Guada Karaoke",
+          "inLanguage": "es-CR",
+          "publisher": { "@id": "https://guada-karaoke.vercel.app/#business" }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

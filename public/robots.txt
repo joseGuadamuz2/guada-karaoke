@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://guada-karaoke.vercel.app/sitemap.xml

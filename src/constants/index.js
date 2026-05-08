@@ -41,9 +41,9 @@ export const COVERAGE_ZONES = [
 // ─── PAQUETES / PRECIOS ───────────────────────────────────────────────────────
 export const PAQUETES = [
   {
-    name:      'Básico',
-    price:     '₡70,000',
-    hours:     3,
+    name:      'Paquete 3h Básico',
+    price:     '₡70,000 + IVA',
+    hours:     1,
     highlight: false,
     tag:       null,
     includes: [
@@ -56,8 +56,8 @@ export const PAQUETES = [
     cta: 'Cotizar paquete básico',
   },
   {
-    name:      'Premium',
-    price:     '₡85,000',
+    name:      'Paquete 5h',
+    price:     '₡85,000 + IVA',
     hours:     5,
     highlight: true,
     tag:       'Más solicitado',
@@ -72,7 +72,7 @@ export const PAQUETES = [
   },
   {
     name:      'Eventos Especiales',
-    price:     'Desde ₡120,000',
+    price:     'Cotización personalizada',
     hours:     null,
     highlight: false,
     tag:       'Bodas · Empresas · XV años',
