@@ -44,7 +44,7 @@ export default function Cobertura() {
             <MapPin size={14} /> ¿Cubrimos tu zona?
           </a>
         </div>
-        <div ref={ref} className={`grid grid-cols-1 md:grid-cols-3 gap-4 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div ref={ref} className={`grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-4 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {COVERAGE_ZONES.map((zone, i) => <CityCard key={zone.city} {...zone} index={i} />)}
         </div>
         <p className="text-center font-inter text-xs text-gray-400 mt-8 tracking-wide">

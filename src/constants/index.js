@@ -14,28 +14,22 @@ export const SOCIAL_LINKS = [
 ];
 
 // ─── COBERTURA ────────────────────────────────────────────────────────────────
-export const COVERAGE_LABEL  = 'Cañas' //'Cañas · Tilarán · Liberia';// 
+export const COVERAGE_LABEL  = 'La Palma, Abangares'; // 'Cañas · Tilarán · Liberia';// 
 export const COVERAGE_REGION = 'Guanacaste, Costa Rica';
 
 export const COVERAGE_ZONES = [
   {
-    city:        'Cañas',
-    region:      'Guanacaste',
-    description: 'Ciudad central de operaciones. Eventos en salones, casas y espacios al aire libre en todo el cantón.',
-    seoKeyword:  'karaoke Cañas Guanacaste',
+    city:        'La Palma, Abangares',
+    region:      'CR',
+    description: 'Nuestra ubicación principal. Animación y karaoke para eventos locales.',
+    seoKeyword:  'karaoke La Palma Abangares',
   },
   {
-    city:        'Santa Cruz',
-    region:      'Guanacaste',
-    description: 'Ciudad de la tradición guanacasteca. Fiestas patronales, eventos privados y celebraciones familiares.',
-    seoKeyword:  'karaoke Santa Cruz Guanacaste',
-  },
-  {
-    city:        'Liberia',
-    region:      'Guanacaste',
-    description: 'Capital de Guanacaste. Eventos corporativos, bodas y fiestas en la ciudad guanacasteca.',
-    seoKeyword:  'karaoke Liberia Guanacaste',
-  },
+    city:        'Todo Guanacaste',
+    region:      'CR',
+    description: 'Somos de Guanacaste, podés contactarnos para consultar nuestra zona de cobertura exacta.',
+    seoKeyword:  'karaoke Guanacaste cobertura',
+  }
 ];
 
 // ─── PAQUETES / PRECIOS ───────────────────────────────────────────────────────
@@ -123,7 +117,7 @@ export const TESTIMONIOS = [
   {
     text:     'El karaoke de Guada fue lo mejor de la fiesta. El animador es increíble, la gente no quería parar. Definitivamente lo contrataré para la próxima quinceañera.',
     name:     'María Valverde',
-    event:    'Quinceañera · Cañas',
+    event:    'Quinceañera · Abangares',
     initials: 'MV',
   },
   {
