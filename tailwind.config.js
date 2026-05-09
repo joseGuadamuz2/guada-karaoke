@@ -13,20 +13,20 @@ export default {
       },
       colors: {
         brand: {
-          red:        '#C0392B',
-          'red-light':'#E74C3C',
-          purple:     '#7C3AED',
-          blue:       '#2563EB',
-          // Light theme surfaces
-          dark:       '#F8F7F4',
-          'dark-2':   '#F2F0EC',
-          'dark-3':   '#E8E5DF',
+          red:        '#E60000', // Bright red from "Guada"
+          'red-light':'#FF3333',
+          purple:     '#7A00FF', // Neon purple
+          magenta:    '#FF00AA', // Neon pink/magenta accent
+          // Dark theme surfaces
+          dark:       '#0A0118', // Deep purple/black
+          'dark-2':   '#130526', // Lighter purple-dark
+          'dark-3':   '#1E0A3C', // Even lighter
         },
       },
       keyframes: {
         'laser-pulse': {
-          '0%, 100%': { opacity: '0.2', width: '60%' },
-          '50%':       { opacity: '0.5', width: '75%' },
+          '0%, 100%': { opacity: '0.4', width: '60%' },
+          '50%':       { opacity: '0.8', width: '75%' },
         },
         'fade-up': {
           '0%':   { opacity: '0', transform: 'translateY(30px)' },

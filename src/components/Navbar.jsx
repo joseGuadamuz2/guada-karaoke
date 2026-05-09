@@ -10,18 +10,18 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled
-        ? 'bg-white/95 backdrop-blur-xl border-b border-black/10 shadow-sm'
+        ? 'bg-brand-dark-2/95 backdrop-blur-xl border-b border-white/10 shadow-sm'
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
         <div className="flex items-center gap-3">
           <span className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_10px_rgba(192,57,43,0.4)] animate-pulse" />
-          <span className="font-bebas text-2xl tracking-[3px] text-gray-900">GUADA KARAOKE</span>
+          <span className="font-bebas text-2xl tracking-[3px] text-white">GUADA KARAOKE</span>
         </div>
         <ul className="hidden md:flex gap-8 list-none m-0 p-0">
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
-              <a href={href} className="text-gray-500 hover:text-gray-900 uppercase text-sm tracking-widest font-rajdhani font-medium transition-colors duration-300 relative group">
+              <a href={href} className="text-gray-400 hover:text-white uppercase text-sm tracking-widest font-rajdhani font-medium transition-colors duration-300 relative group">
                 {label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-brand-red group-hover:w-full transition-all duration-300" />
               </a>
@@ -35,15 +35,15 @@ export default function Navbar() {
                      [clip-path:polygon(8px_0%,100%_0%,calc(100%-8px)_100%,0%_100%)]">
           <MessageCircle size={16} /> Cotizar Ahora
         </a>
-        <button className="md:hidden text-gray-900 p-2" onClick={() => setMenuOpen(p => !p)} aria-label="Abrir menú">
+        <button className="md:hidden text-white p-2" onClick={() => setMenuOpen(p => !p)} aria-label="Abrir menú">
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-black/10 px-6 py-4 shadow-lg">
+        <div className="md:hidden bg-brand-dark border-t border-white/10 px-6 py-4 shadow-lg">
           {NAV_LINKS.map(({ href, label }) => (
             <a key={href} href={href}
-              className="block py-3 text-gray-600 hover:text-gray-900 uppercase tracking-widest text-sm font-rajdhani"
+              className="block py-3 text-gray-300 hover:text-white uppercase tracking-widest text-sm font-rajdhani"
               onClick={() => setMenuOpen(false)}>{label}</a>
           ))}
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer"

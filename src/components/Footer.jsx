@@ -5,31 +5,31 @@ import { SOCIAL_LINKS, FOOTER_NAV_LINKS, EMAIL, PHONE_DISPLAY, WHATSAPP_URL, COV
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-gray-900 border-t border-white/5">
+    <footer className="bg-brand-dark border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-3">
-            <span className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_10px_rgba(192,57,43,0.5)] animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_10px_rgba(230,0,0,0.5)] animate-pulse" />
             <span className="font-bebas text-xl tracking-[3px] text-white">GUADA KARAOKE</span>
           </div>
-          <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-500">Animación · Eventos · Karaoke</p>
-          <p className="font-inter text-sm text-gray-500 leading-relaxed max-w-xs">
+          <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">Animación · Eventos · Karaoke</p>
+          <p className="font-inter text-sm text-gray-400 leading-relaxed max-w-xs">
             El mejor karaoke de Guanacaste. Servicio profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
           </p>
           <div className="flex gap-3 mt-1">
             {SOCIAL_LINKS.map(({ name, url, iconName }) => (
               <a key={name} href={url} target="_blank" rel="noreferrer" aria-label={name}
-                className="w-9 h-9 flex items-center justify-center border border-white/10 text-gray-500 hover:text-white hover:border-brand-red transition-all duration-300">
+                className="w-9 h-9 flex items-center justify-center border border-white/10 text-gray-400 hover:text-white hover:border-brand-red transition-all duration-300">
                 <SocialIcon iconName={iconName} size={16} />
               </a>
             ))}
           </div>
         </div>
         <div>
-          <h4 className="font-rajdhani text-[10px] tracking-[3px] uppercase text-gray-600 mb-5">Navegación</h4>
+          <h4 className="font-rajdhani text-[10px] tracking-[3px] uppercase text-gray-500 mb-5">Navegación</h4>
           <nav className="flex flex-col gap-3">
             {FOOTER_NAV_LINKS.map(({ href, label }) => (
-              <a key={href} href={href} className="font-rajdhani text-sm tracking-wide text-gray-500 hover:text-white transition-colors duration-300 w-fit relative group">
+              <a key={href} href={href} className="font-rajdhani text-sm tracking-wide text-gray-400 hover:text-white transition-colors duration-300 w-fit relative group">
                 {label}
                 <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-brand-red group-hover:w-full transition-all duration-300" />
               </a>
@@ -37,14 +37,14 @@ export default function Footer() {
           </nav>
         </div>
         <div>
-          <h4 className="font-rajdhani text-[10px] tracking-[3px] uppercase text-gray-600 mb-5">Contacto</h4>
+          <h4 className="font-rajdhani text-[10px] tracking-[3px] uppercase text-gray-500 mb-5">Contacto</h4>
           <div className="flex flex-col gap-4">
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="flex items-center gap-3 group">
               <div className="w-8 h-8 flex items-center justify-center bg-[#25D366]/10 border border-[#25D366]/20 group-hover:border-[#25D366]/50 transition-all">
                 <SocialIcon iconName="WhatsApp" size={14} className="text-[#25D366]" />
               </div>
               <div>
-                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-600">WhatsApp</div>
+                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-500">WhatsApp</div>
                 <div className="font-rajdhani text-sm text-gray-400 group-hover:text-white transition-colors">{PHONE_DISPLAY}</div>
               </div>
             </a>
@@ -53,7 +53,7 @@ export default function Footer() {
                 <Mail size={14} className="text-brand-red" />
               </div>
               <div>
-                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-600">Email</div>
+                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-500">Email</div>
                 <div className="font-rajdhani text-sm text-gray-400 group-hover:text-white transition-colors break-all">{EMAIL}</div>
               </div>
             </a>
@@ -62,7 +62,7 @@ export default function Footer() {
                 <Phone size={14} className="text-brand-purple" />
               </div>
               <div>
-                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-600">Cobertura</div>
+                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-500">Cobertura</div>
                 <div className="font-rajdhani text-sm text-gray-400">{COVERAGE_LABEL}</div>
               </div>
             </div>
@@ -71,8 +71,8 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/5 px-6 py-5">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="font-rajdhani text-[11px] tracking-wide text-gray-600">© {year} Guada Karaoke · Guanacaste, Costa Rica · Todos los derechos reservados</p>
-          <p className="font-rajdhani text-[11px] tracking-wide text-gray-600">Animación · Eventos · Karaoke</p>
+          <p className="font-rajdhani text-[11px] tracking-wide text-gray-500">© {year} Guada Karaoke · Guanacaste, Costa Rica · Todos los derechos reservados</p>
+          <p className="font-rajdhani text-[11px] tracking-wide text-gray-500">Animación · Eventos · Karaoke</p>
         </div>
       </div>
     </footer>

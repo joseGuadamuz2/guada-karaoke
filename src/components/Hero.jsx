@@ -4,15 +4,15 @@ import { WHATSAPP_URL, COVERAGE_LABEL } from '../constants';
 const LASERS = [
   { style: 'top-[30%] left-0 w-3/5 -rotate-[15deg]',             color: 'from-transparent via-brand-red to-transparent',    delay: '0s',   opacity: 'opacity-30' },
   { style: 'top-[40%] left-0 w-3/5 -rotate-[8deg]',              color: 'from-transparent via-brand-purple to-transparent', delay: '1s',   opacity: 'opacity-20' },
-  { style: 'top-[25%] right-0 w-3/5 rotate-[12deg] origin-right', color: 'from-transparent via-brand-blue to-transparent',   delay: '0.5s', opacity: 'opacity-20' },
+  { style: 'top-[25%] right-0 w-3/5 rotate-[12deg] origin-right', color: 'from-transparent via-brand-magenta to-transparent',   delay: '0.5s', opacity: 'opacity-20' },
 ];
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-[72px] bg-brand-dark">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(192,57,43,0.08)_0%,transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_30%,rgba(124,58,237,0.06)_0%,transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(230,0,0,0.15)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_30%,rgba(122,0,255,0.15)_0%,transparent_50%)]" />
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         {LASERS.map((laser, i) => (
@@ -30,12 +30,12 @@ export default function Hero() {
         </div>
 
         <h1 className="font-bebas text-[clamp(3.5rem,9vw,7rem)] leading-[0.92] tracking-wide mb-6">
-          <span className="text-gray-900 block">Tu fiesta,</span>
-          <span className="text-brand-red block" style={{ textShadow: '0 0 40px rgba(192,57,43,0.25)' }}>tu evento,</span>
-          <span className="block text-gray-900">tu karaoke.</span>
+          <span className="text-white block">Tu fiesta,</span>
+          <span className="text-brand-red block" style={{ textShadow: '0 0 40px rgba(230,0,0,0.5)' }}>tu evento,</span>
+          <span className="block text-white">tu karaoke.</span>
         </h1>
 
-        <p className="font-inter text-gray-600 text-lg leading-relaxed max-w-xl mb-4">
+        <p className="font-inter text-gray-300 text-lg leading-relaxed max-w-xl mb-4">
           Animación profesional, sonido de alta calidad y el mejor ambiente para tus eventos en Guanacaste.
         </p>
 
@@ -43,7 +43,7 @@ export default function Hero() {
           {['Animación', 'Eventos', 'Karaoke'].map((item, i) => (
             <span key={item} className="flex items-center gap-3">
               <span className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">{item}</span>
-              {i < 2 && <span className="w-px h-3 bg-black/15" />}
+              {i < 2 && <span className="w-px h-3 bg-white/15" />}
             </span>
           ))}
         </div>
@@ -58,8 +58,8 @@ export default function Hero() {
             <MessageCircle size={20} /> Cotizar por WhatsApp
           </a>
           <a href="#precios"
-            className="inline-flex items-center gap-3 border border-black/20 hover:border-brand-red
-                       text-gray-700 hover:text-brand-red font-rajdhani font-semibold text-base
+            className="inline-flex items-center gap-3 border border-white/20 hover:border-brand-red
+                       text-white hover:text-brand-red font-rajdhani font-semibold text-base
                        tracking-[2px] uppercase px-7 py-4 transition-all duration-300">
             <ChevronDown size={18} /> Ver Precios
           </a>

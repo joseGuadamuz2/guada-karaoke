@@ -14,7 +14,7 @@ import { GALLERY_ITEMS, WHATSAPP_URL } from '../constants';
 function GalleryItem({ label, src, color, large }) {
   return (
     <div
-      className={`group relative overflow-hidden bg-[#1e2a4a] cursor-pointer
+      className={`group relative overflow-hidden bg-brand-dark-3 cursor-pointer
                   ${large ? 'col-span-6 md:col-span-2 row-span-2' : 'col-span-3 md:col-span-2'}`}
     >
       {/* ── Imagen real o placeholder según src ── */}
@@ -27,7 +27,7 @@ function GalleryItem({ label, src, color, large }) {
         />
       ) : (
         <div
-          className={`w-full h-full bg-gradient-to-br ${color} to-[#1e2a4a]
+          className={`w-full h-full bg-gradient-to-br ${color} to-brand-dark-2
                       flex items-center justify-center
                       group-hover:scale-105 transition-transform duration-500`}
         >
@@ -65,7 +65,7 @@ export default function Galeria() {
   const [ref, inView] = useInView();
 
   return (
-    <section id="galeria" className="py-24 px-6 bg-[#1A1A2E]">
+    <section id="galeria" className="py-24 px-6 bg-brand-dark">
       <div className="max-w-7xl mx-auto">
 
         {/* ── Encabezado ── */}

@@ -18,13 +18,13 @@ export default function SectionHeader({ tag, title, accent, accentColor = 'text-
         </span>
       </div>
 
-      <h2 className="font-bebas text-[clamp(2.5rem,5vw,4rem)] tracking-wide leading-none">
+      <h2 className="font-bebas text-[clamp(2.5rem,5vw,4rem)] tracking-wide leading-none text-white">
         {title}{' '}
         <span className={accentColor}>{accent}</span>
       </h2>
 
       {subtitle && (
-        <p className="font-inter text-gray-600 mt-3 text-base leading-relaxed max-w-md">
+        <p className="font-inter text-gray-400 mt-3 text-base leading-relaxed max-w-md">
           {subtitle}
         </p>
       )}

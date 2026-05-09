@@ -31,7 +31,7 @@ function TestimonioCard({ text, name, event, initials }) {
         ))}
       </div>
 
-      <p className="font-inter text-gray-500 text-[0.9rem] leading-relaxed italic mb-6">
+      <p className="font-inter text-gray-300 text-[0.9rem] leading-relaxed italic mb-6">
         "{text}"
       </p>
 
@@ -42,8 +42,8 @@ function TestimonioCard({ text, name, event, initials }) {
           {initials}
         </div>
         <div>
-          <div className="font-rajdhani font-bold text-[0.9rem] tracking-wide">{name}</div>
-          <div className="font-rajdhani text-[0.75rem] text-gray-600 tracking-wide uppercase mt-0.5">
+          <div className="font-rajdhani font-bold text-[0.9rem] tracking-wide text-white">{name}</div>
+          <div className="font-rajdhani text-[0.75rem] text-gray-400 tracking-wide uppercase mt-0.5">
             {event}
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Testimonios() {
           tag="Lo que dicen"
           title="Nuestros"
           accent="Clientes"
-          accentColor="text-brand-blue"
+          accentColor="text-brand-magenta"
         />
 
         <div
