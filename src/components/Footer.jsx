@@ -1,4 +1,4 @@
-import { Mail, Phone } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { SocialIcon } from './ui/SocialIcons';
 import { SOCIAL_LINKS, FOOTER_NAV_LINKS, EMAIL, PHONE_DISPLAY, WHATSAPP_URL, COVERAGE_LABEL } from '../constants';
 
@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
           <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">Animación · Eventos · Karaoke</p>
           <p className="font-inter text-sm text-gray-400 leading-relaxed max-w-xs">
-            El mejor karaoke de Guanacaste. Servicio profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
+            Karaoke Guanacaste. Servicio profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
           </p>
           <div className="flex gap-3 mt-1">
             {SOCIAL_LINKS.map(({ name, url, iconName }) => (
@@ -59,7 +59,7 @@ export default function Footer() {
             </a>
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 flex items-center justify-center bg-brand-purple/10 border border-brand-purple/20">
-                <Phone size={14} className="text-brand-purple" />
+                <MapPin size={14} className="text-brand-purple" />
               </div>
               <div>
                 <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-500">Cobertura</div>

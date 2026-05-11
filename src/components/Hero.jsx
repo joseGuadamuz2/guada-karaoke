@@ -2,9 +2,9 @@ import { MessageCircle, ChevronDown } from 'lucide-react';
 import { WHATSAPP_URL, COVERAGE_LABEL } from '../constants';
 
 const LASERS = [
-  { style: 'top-[30%] left-0 w-3/5 -rotate-[15deg]',             color: 'from-transparent via-brand-red to-transparent',    delay: '0s',   opacity: 'opacity-30' },
-  { style: 'top-[40%] left-0 w-3/5 -rotate-[8deg]',              color: 'from-transparent via-brand-purple to-transparent', delay: '1s',   opacity: 'opacity-20' },
-  { style: 'top-[25%] right-0 w-3/5 rotate-[12deg] origin-right', color: 'from-transparent via-brand-magenta to-transparent',   delay: '0.5s', opacity: 'opacity-20' },
+  { style: 'top-[30%] left-0 w-3/5 -rotate-[15deg]', color: 'from-transparent via-brand-red to-transparent', delay: '0s', opacity: 'opacity-30' },
+  { style: 'top-[40%] left-0 w-3/5 -rotate-[8deg]', color: 'from-transparent via-brand-purple to-transparent', delay: '1s', opacity: 'opacity-20' },
+  { style: 'top-[25%] right-0 w-3/5 rotate-[12deg] origin-right', color: 'from-transparent via-brand-magenta to-transparent', delay: '0.5s', opacity: 'opacity-20' },
 ];
 
 export default function Hero() {
@@ -48,7 +48,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer"
             className="inline-flex items-center gap-3 bg-brand-red hover:bg-brand-red-light text-white
                        font-rajdhani font-bold text-base tracking-[2px] uppercase px-7 py-4
@@ -57,12 +57,12 @@ export default function Hero() {
                        [clip-path:polygon(10px_0%,100%_0%,calc(100%-10px)_100%,0%_100%)]">
             <MessageCircle size={20} /> Cotizar por WhatsApp
           </a>
-          <a href="#precios"
+          {/* <a href="#precios"
             className="inline-flex items-center gap-3 border border-white/20 hover:border-brand-red
                        text-white hover:text-brand-red font-rajdhani font-semibold text-base
                        tracking-[2px] uppercase px-7 py-4 transition-all duration-300">
             <ChevronDown size={18} /> Ver Precios
-          </a>
+          </a>*/}
         </div>
       </div>
     </section>
