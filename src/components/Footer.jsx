@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
           <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">Animación · Eventos · Karaoke</p>
           <p className="font-inter text-sm text-gray-400 leading-relaxed max-w-xs">
-            Karaoke Guanacaste. Servicio profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
+            Servicio de karaoke profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
           </p>
           <div className="flex gap-3 mt-1">
             {SOCIAL_LINKS.map(({ name, url, iconName }) => (
