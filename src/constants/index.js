@@ -88,19 +88,19 @@ export const SERVICIOS = [
     iconName: 'Mic2',
     name:     'Karaoke Bailable + DJ',
     desc:     'Para bares y eventos privados.',
-    tags:     ['Música Bailable', 'Bares & eventos privados', 'Micrófonos inalámbricos', 'Pantalla HD'],
+    tags:     ['Programación musical variada', 'Micrófonos inalámbricos', 'Mezclas de DJ en vivo'],
   },
   {
     iconName: 'Volume2',
     name:     'Amplificación & Transmisión',
     desc:     'Sonido para reuniones, celebraciones y transmisión de partidos en pantalla grande.',
-    tags:     ['Sonido Profesional', 'Transmisión de partidos', 'Exteriores e interiores', 'Pantalla grande'],
+    tags:     ['Transmisión de partidos', 'Exteriores e interiores', 'Pantalla grande'],
   },
   {
     iconName: 'Sparkles',
     name:     'Eventos Especiales',
     desc:     'Bodas, quinceaños, graduaciones y más. Iluminacion DMX, animación personalizada y pantalla de proyección para los momentos que no se repiten.',
-    tags:     ['Celebraciones', 'Actividades', 'Sonido de calidad', 'Luces'],
+    tags:     ['Programación musical variada', 'Luces LED ambiente', 'Animación personalizada'],
   },
 ];
 

@@ -12,7 +12,7 @@ export default function Footer() {
             <span className="w-2 h-2 rounded-full bg-brand-red shadow-[0_0_10px_rgba(230,0,0,0.5)] animate-pulse" />
             <span className="font-bebas text-xl tracking-[3px] text-white">GUADA KARAOKE</span>
           </div>
-          <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">Animación · Eventos · Karaoke</p>
+          <p className="font-rajdhani text-xs tracking-[2px] uppercase text-gray-400">La forma efectiva de alegrar tu fiesta.</p>
           <p className="font-inter text-sm text-gray-400 leading-relaxed max-w-xs">
             Servicio de karaoke profesional en <span className="text-gray-400">{COVERAGE_LABEL}</span>.
           </p>

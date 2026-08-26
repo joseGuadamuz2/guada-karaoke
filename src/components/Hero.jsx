@@ -36,7 +36,7 @@ export default function Hero() {
         </h1>
 
         <p className="font-inter text-gray-300 text-lg leading-relaxed max-w-xl mb-4">
-          Animación profesional, sonido de alta calidad y el mejor ambiente para tus eventos en Guanacaste.
+          Llevamos el sonido, las luces y la animación a tu evento en cualquier punto de Guanacaste.
         </p>
 
         <div className="flex items-center gap-3 mb-10">

@@ -38,7 +38,7 @@ export default function Servicios() {
             Nuestros <span className="text-brand-red">Servicios</span>
           </h2>
           <p className="font-inter text-gray-400 mt-3 text-sm leading-relaxed max-w-md">
-            Soluciones para tu celebración o evento en Guanacaste.
+            Karaoke: La forma efectiva de alegrar tu fiesta.
           </p>
         </div>
         <div ref={ref} className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>

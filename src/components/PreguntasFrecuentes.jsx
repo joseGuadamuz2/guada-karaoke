@@ -25,7 +25,7 @@ const FAQ_ITEMS = [
   },
   {
     q: '¿El equipo de sonido es profesional?',
-    a: 'Sí, utilizamos equipos de sonido de marca reconocida, micrófonos inalámbricos de alta calidad, pantallas de proyección HD y torres de iluminación LED. Todo el equipo es transportado e instalado por nuestro equipo técnico.',
+    a: 'Sí, utilizamos equipos de sonido de marca reconocida, micrófonos inalámbricos de alta calidad, pantallas de proyección HD y  iluminación LED DMX. Todo el equipo es transportado e instalado por nuestro equipo técnico.',
   },
 ];
 

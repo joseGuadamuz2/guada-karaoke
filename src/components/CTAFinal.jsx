@@ -26,9 +26,9 @@ export default function CTAFinal() {
           <span className="w-8 h-px bg-brand-red" />
         </div>
         <h2 className="font-bebas text-[clamp(3rem,7vw,5.5rem)] tracking-wide leading-none max-w-2xl mx-auto mb-4 text-white">
-          Reserva tu <span className="text-brand-red">Noche Perfecta</span> Hoy
+          ¿Querés que tu evento sea <span className="text-brand-red">el que todos recuerden</span>?
         </h2>
-        <p className="font-inter text-gray-400 mb-10 text-lg">Respuesta garantizada en menos de 2 horas. Sin compromiso.</p>
+        <p className="font-inter text-gray-400 mb-10 text-lg">Escribinos y te lo resolvemos en 2 horas</p>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer"
           className="inline-flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white font-rajdhani font-bold text-lg tracking-[2px] uppercase px-10 py-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(37,211,102,0.25)] [clip-path:polygon(12px_0%,100%_0%,calc(100%-12px)_100%,0%_100%)]">
           <MessageCircle size={24} /> Cotizar Gratis por WhatsApp
