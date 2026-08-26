@@ -1,15 +1,16 @@
-import Navbar      from './components/Navbar';
-import Hero        from './components/Hero';
-import StatsStrip  from './components/StatsStrip';
-import Servicios   from './components/Servicios';
-import Precios     from './components/Precios';
-import Galeria     from './components/Galeria';
-import Cobertura   from './components/Cobertura';
-import Testimonios from './components/Testimonios';
-import CTAFinal    from './components/CTAFinal';
-import Footer      from './components/Footer';
-import NeonDivider from './components/ui/NeonDivider';
-import BgParticles from './components/ui/BgParticles';
+import Navbar             from './components/Navbar';
+import Hero               from './components/Hero';
+import StatsStrip         from './components/StatsStrip';
+import Servicios          from './components/Servicios';
+import Precios            from './components/Precios';
+import Galeria            from './components/Galeria';
+import Cobertura          from './components/Cobertura';
+import Testimonios        from './components/Testimonios';
+import PreguntasFrecuentes from './components/PreguntasFrecuentes';
+import CTAFinal           from './components/CTAFinal';
+import Footer             from './components/Footer';
+import NeonDivider        from './components/ui/NeonDivider';
+import BgParticles        from './components/ui/BgParticles';
 
 
 export default function App() {
@@ -31,6 +32,8 @@ export default function App() {
         <Galeria />
         <NeonDivider />
         <Cobertura />
+        <NeonDivider />
+        <PreguntasFrecuentes />
         <NeonDivider />
         {/* <Testimonios /> */}
         <NeonDivider />

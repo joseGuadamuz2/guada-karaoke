@@ -1,6 +1,6 @@
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import { SocialIcon } from './ui/SocialIcons';
-import { SOCIAL_LINKS, FOOTER_NAV_LINKS, EMAIL, PHONE_DISPLAY, WHATSAPP_URL, COVERAGE_LABEL } from '../constants';
+import { SOCIAL_LINKS, FOOTER_NAV_LINKS, EMAIL, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_URL, COVERAGE_LABEL } from '../constants';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -39,6 +39,15 @@ export default function Footer() {
         <div>
           <h4 className="font-rajdhani text-[10px] tracking-[3px] uppercase text-gray-500 mb-5">Contacto</h4>
           <div className="flex flex-col gap-4">
+            <a href={`tel:${PHONE_TEL}`} className="flex items-center gap-3 group">
+              <div className="w-8 h-8 flex items-center justify-center bg-brand-blue/10 border border-brand-blue/20 group-hover:border-brand-blue/50 transition-all">
+                <Phone size={14} className="text-brand-blue" />
+              </div>
+              <div>
+                <div className="font-rajdhani text-xs tracking-[1.5px] uppercase text-gray-500">Teléfono</div>
+                <div className="font-rajdhani text-sm text-gray-400 group-hover:text-white transition-colors">{PHONE_DISPLAY}</div>
+              </div>
+            </a>
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="flex items-center gap-3 group">
               <div className="w-8 h-8 flex items-center justify-center bg-[#25D366]/10 border border-[#25D366]/20 group-hover:border-[#25D366]/50 transition-all">
                 <SocialIcon iconName="WhatsApp" size={14} className="text-[#25D366]" />

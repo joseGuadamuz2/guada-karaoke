@@ -4,6 +4,7 @@ export const WHATSAPP_MESSAGE = 'Hola! Quiero cotizar un karaoke para mi evento 
 export const WHATSAPP_URL     = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 export const EMAIL            = 'jocguada@gmail.com';
 export const PHONE_DISPLAY    = '8338-8115';
+export const PHONE_TEL        = '+50683388115';
 
 // ─── REDES SOCIALES ───────────────────────────────────────────────────────────
 export const SOCIAL_LINKS = [
@@ -149,6 +150,7 @@ export const NAV_LINKS = [
   //{ href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
+  { href: '#faq',         label: 'Preguntas'   },
   // { href: '#testimonios', label: 'Testimonios' },
 ];
 
@@ -166,5 +168,6 @@ export const FOOTER_NAV_LINKS = [
   //{ href: '#precios',     label: 'Precios'     },
   { href: '#galeria',     label: 'Galería'     },
   { href: '#cobertura',   label: 'Cobertura'   },
+  { href: '#faq',         label: 'Preguntas'   },
  // { href: '#testimonios', label: 'Testimonios' },
 ];
